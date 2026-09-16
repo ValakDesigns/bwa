@@ -1,14 +1,13 @@
 # Image assets — pending
 
-This project currently ships with **no real raster/photo assets**. Everywhere a
-photo would normally appear (logo, hero image, founder photos, staff/volunteer
-photos), the site uses a labeled placeholder component instead so the layout,
+`logo.png` is the real Brain Warrior Academy logo. Everywhere else a photo
+would normally appear (hero image, founder photos, staff/volunteer photos),
+the site still uses a labeled placeholder component instead so the layout,
 accessibility attributes, and `next/image` usage are all correct and ready to
 receive real files.
 
 ## TODO before launch
 
-- `logo.png` (or `.svg`) — Brain Warrior Academy logo, transparent background.
 - `hero.jpg` — hero/banner photo for the homepage.
 - `founders.jpg` — photo of the two founders for the "Our Story" section.
 - `founders-about.jpg` — a second founders/story photo for the About page.

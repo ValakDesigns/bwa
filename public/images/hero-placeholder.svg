@@ -3,16 +3,16 @@
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#FFD9A0"/>
-      <stop offset="100%" stop-color="#FF8C61"/>
+      <stop offset="100%" stop-color="#02A8B0"/>
     </linearGradient>
   </defs>
   <rect width="1200" height="900" fill="url(#bg)"/>
-  <circle cx="300" cy="220" r="120" fill="#1B4B5A" opacity="0.15"/>
-  <circle cx="980" cy="700" r="160" fill="#1B4B5A" opacity="0.12"/>
+  <circle cx="300" cy="220" r="120" fill="#00244E" opacity="0.15"/>
+  <circle cx="980" cy="700" r="160" fill="#00244E" opacity="0.12"/>
   <g transform="translate(230,300)">
     <rect x="0" y="0" width="740" height="360" rx="24" fill="#FDF8F0" opacity="0.9"/>
-    <text x="370" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#1B4B5A" font-weight="bold">Brain Warrior Academy</text>
-    <text x="370" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#1B4B5A">Placeholder hero image</text>
-    <text x="370" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#1B4B5A">TODO: replace with a real tutoring photo</text>
+    <text x="370" y="150" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#00244E" font-weight="bold">Brain Warrior Academy</text>
+    <text x="370" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#00244E">Placeholder hero image</text>
+    <text x="370" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#00244E">TODO: replace with a real tutoring photo</text>
   </g>
 </svg>

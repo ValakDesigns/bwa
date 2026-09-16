@@ -1,10 +1,15 @@
 import { ImageResponse } from "next/og";
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export const alt = "Brain Warrior Academy — free tutoring for K-12 students facing serious illness";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpengraphImage() {
+export default async function OpengraphImage() {
+  const logoData = await readFile(join(process.cwd(), "public/images/logo.png"));
+  const logoSrc = `data:image/png;base64,${logoData.toString("base64")}`;
+
   return new ImageResponse(
     (
       <div
@@ -15,32 +20,23 @@ export default function OpengraphImage() {
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          background: "linear-gradient(135deg, #FFD9A0 0%, #FF8C61 100%)",
+          background: "linear-gradient(135deg, #FFD9A0 0%, #02A8B0 100%)",
           fontFamily: "sans-serif",
         }}
       >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: 120,
-            height: 120,
-            borderRadius: "9999px",
-            background: "#1B4B5A",
-            color: "#FDF8F0",
-            fontSize: 40,
-            fontWeight: 800,
-            marginBottom: 32,
-          }}
-        >
-          BW
-        </div>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={logoSrc}
+          width={140}
+          height={140}
+          alt=""
+          style={{ marginBottom: 32 }}
+        />
         <div
           style={{
             fontSize: 64,
             fontWeight: 800,
-            color: "#1B4B5A",
+            color: "#00244E",
             textAlign: "center",
           }}
         >
@@ -50,7 +46,7 @@ export default function OpengraphImage() {
           style={{
             marginTop: 20,
             fontSize: 30,
-            color: "#1B4B5A",
+            color: "#00244E",
             textAlign: "center",
             maxWidth: 900,
           }}

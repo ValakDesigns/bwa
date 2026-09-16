@@ -76,17 +76,15 @@ Everywhere one is needed, a clearly labeled placeholder component or a
 generated SVG/OG image stands in, with `TODO` comments marking exactly what
 needs to be swapped in. Before launch, replace:
 
-- **Logo** — a real `logo.png`/`.svg` (currently a text-based `BW` mark in
-  `components/ui/Logo.tsx`).
 - **Founder / hero photos** — real photography for the homepage hero and
   the "Our Story" sections on the home and About pages (currently
   `PlaceholderBox` components and a placeholder hero SVG — see
-  `public/images/README.md`).
-- **Final brand hex codes** — the coral/teal/cream palette in
-  `app/globals.css` (`--color-primary`, `--color-secondary`,
-  `--color-accent`, `--color-background`, `--color-text`) is a reasonable
-  placeholder that already passes WCAG AA contrast checks, but should be
-  confirmed against the organization's real brand guidelines.
+  `public/images/README.md`). The real logo (`public/images/logo.png`) is
+  already in place and used in the Navbar, Footer, favicon, and OG image.
+- **Brand hex codes** — `app/globals.css` (`--color-primary`,
+  `--color-secondary`) are sampled directly from the real logo (teal
+  `#02A8B0`, navy `#00244E`) and pass WCAG AA contrast checks; confirm
+  against the organization's official brand guidelines if one exists.
 - **Real contact email** — `hello@brainwarrioracademy.org` appears in the
   Footer and is marked with a `TODO` comment; replace with the
   organization's real inbox.
