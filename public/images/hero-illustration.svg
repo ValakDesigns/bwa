@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="heroTitle heroDesc">
+  <title id="heroTitle">Illustration of a tutor and student learning together</title>
+  <desc id="heroDesc">A stylized paper-cutout illustration of two people sitting at a table, one pointing to an open book, with stars and a heart-brain badge in the background — decorative, not a photo of real people.</desc>
+
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFD9A0"/>
+      <stop offset="100%" stop-color="#02A8B0"/>
+    </linearGradient>
+    <clipPath id="heroTorn">
+      <path d="M18 40 L120 8 L260 34 L420 6 L600 30 L780 4 L960 28 L1120 6 L1182 44
+               L1170 220 L1196 380 L1174 560 L1198 720 L1168 860 L1000 894 L820 866
+               L640 896 L460 864 L280 892 L100 862 L20 820 L46 640 L14 460 L44 280 L16 140 Z"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#heroTorn)">
+    <rect width="1200" height="900" fill="url(#heroBg)"/>
+
+    <!-- soft decorative blobs -->
+    <circle cx="220" cy="180" r="130" fill="#00244E" opacity="0.10"/>
+    <circle cx="1040" cy="740" r="170" fill="#00244E" opacity="0.10"/>
+    <circle cx="1000" cy="140" r="70" fill="#FDF8F0" opacity="0.35"/>
+
+    <!-- stars, echoing the logo -->
+    <g fill="#FDF8F0" opacity="0.9">
+      <path d="M170 640 l10 24 26 3 -20 17 6 26 -22-14 -22 14 6-26 -20-17 26-3z"/>
+      <path d="M1080 320 l8 18 20 2 -15 13 5 20 -18-11 -18 11 5-20 -15-13 20-2z"/>
+      <path d="M980 620 l6 14 16 2 -12 10 4 16 -14-9 -14 9 4-16 -12-10 16-2z"/>
+    </g>
+
+    <!-- table -->
+    <rect x="170" y="640" width="860" height="34" rx="10" fill="#00244E"/>
+    <rect x="200" y="674" width="30" height="130" fill="#00244E"/>
+    <rect x="770" y="674" width="30" height="130" fill="#00244E"/>
+
+    <!-- open book on the table -->
+    <g transform="translate(470,560)">
+      <path d="M0 60 Q80 20 160 60 L160 100 Q80 65 0 100 Z" fill="#FDF8F0"/>
+      <path d="M160 60 Q240 20 320 60 L320 100 Q240 65 160 100 Z" fill="#FDF8F0"/>
+      <path d="M20 62 Q80 34 150 60" stroke="#00244E" stroke-width="4" fill="none" opacity="0.5"/>
+      <path d="M170 60 Q240 34 300 62" stroke="#00244E" stroke-width="4" fill="none" opacity="0.5"/>
+    </g>
+
+    <!-- tutor figure (left) -->
+    <g transform="translate(330,380)">
+      <path d="M0 260 C-10 160 10 90 90 90 C170 90 190 160 180 260 Z" fill="#00244E"/>
+      <circle cx="90" cy="40" r="52" fill="#00244E"/>
+      <path d="M45 20 Q90 -20 135 20 Q140 45 120 55 Q100 20 60 30 Q45 30 45 20 Z" fill="#012E52"/>
+      <!-- pointing arm -->
+      <path d="M170 150 Q230 140 250 100" stroke="#00244E" stroke-width="26" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- student figure (right) -->
+    <g transform="translate(700,400)">
+      <path d="M0 240 C-8 150 8 84 82 84 C156 84 172 150 164 240 Z" fill="#02757A"/>
+      <circle cx="82" cy="36" r="46" fill="#02757A"/>
+      <path d="M40 18 Q82 -14 124 18 Q128 38 112 46 Q92 16 55 26 Q40 26 40 18 Z" fill="#014D52"/>
+      <!-- arm resting near book -->
+      <path d="M10 130 Q-40 150 -55 190" stroke="#02757A" stroke-width="24" stroke-linecap="round" fill="none"/>
+    </g>
+
+    <!-- heart-in-brain badge, echoing the logo mark -->
+    <g transform="translate(560,150)">
+      <circle cx="0" cy="0" r="70" fill="#FDF8F0" opacity="0.92"/>
+      <path d="M-26 -6 C-26 -24 -6 -24 0 -8 C6 -24 26 -24 26 -6 C26 12 0 28 0 28 C0 28 -26 12 -26 -6 Z" fill="#02A8B0"/>
+      <path d="M-40 -4 q6 -14 16 -8 M32 -4 q-6 -14 -16 -8" stroke="#02A8B0" stroke-width="4" fill="none" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- torn-edge outline -->
+  <path d="M18 40 L120 8 L260 34 L420 6 L600 30 L780 4 L960 28 L1120 6 L1182 44
+           L1170 220 L1196 380 L1174 560 L1198 720 L1168 860 L1000 894 L820 866
+           L640 896 L460 864 L280 892 L100 862 L20 820 L46 640 L14 460 L44 280 L16 140 Z"
+        fill="none" stroke="#FDF8F0" stroke-width="6" opacity="0.6"/>
+</svg>

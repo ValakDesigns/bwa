@@ -63,13 +63,14 @@ export default function Hero() {
           className="relative mx-auto aspect-[4/3] w-full max-w-lg"
         >
           {/*
-            TODO: replace this placeholder illustration with a real photo of
-            a tutoring session once one is available (see
-            public/images/README.md).
+            Custom illustration (not a photo) so the hero has real visual
+            interest without depicting specific people. TODO: consider
+            swapping for a real photo of a tutoring session once one is
+            available (see public/images/README.md).
           */}
           <Image
-            src="/images/hero-placeholder.svg"
-            alt="Placeholder illustration representing a Brain Warrior Academy tutoring session — TODO: replace with a real photo"
+            src="/images/hero-illustration.svg"
+            alt="Illustration of a tutor and student sitting together at a table with an open book"
             fill
             priority
             className="rounded-3xl object-cover shadow-paper-lg"
