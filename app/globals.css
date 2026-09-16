@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* TODO: confirm final brand hex codes with the design/founders team before launch */
+  /* Stored as "R G B" triplets so Tailwind's rgb(var(--x) / <alpha-value>) can apply opacity modifiers */
+  --color-primary: 255 140 97; /* #FF8C61 warm coral */
+  --color-primary-dark: 224 111 69; /* #E06F45 */
+  --color-secondary: 27 75 90; /* #1B4B5A deep teal/blue */
+  --color-accent: 255 217 160; /* #FFD9A0 soft cream/yellow */
+  --color-background: 253 248 240; /* #FDF8F0 warm off-white */
+  --color-text: 44 36 32; /* #2C2420 dark warm charcoal */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--color-background));
+  color: rgb(var(--color-text));
+  font-family: var(--font-body), sans-serif;
+}
+
+/* Global visible focus states for full keyboard accessibility */
+:focus-visible {
+  outline: 3px solid var(--color-secondary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@layer components {
+  /* Paper-cutout card with a subtle torn-edge silhouette and soft drop shadow */
+  .paper-card {
+    @apply relative bg-white/90 rounded-2xl shadow-paper p-6 md:p-8;
+    clip-path: polygon(
+      1% 4%, 6% 0%, 22% 2%, 40% 0%, 58% 1.5%, 76% 0%, 94% 2%, 100% 5%,
+      99% 22%, 100% 40%, 98.5% 58%, 100% 76%, 99% 95%, 94% 100%,
+      76% 98.5%, 58% 100%, 40% 98.5%, 22% 100%, 6% 98.5%, 0% 94%,
+      1.5% 76%, 0% 58%, 1.5% 40%, 0% 22%
+    );
+  }
+
+  .paper-card-flat {
+    @apply relative bg-white/90 rounded-2xl shadow-paper p-6 md:p-8;
+  }
+
+  .section-heading {
+    @apply font-display text-3xl md:text-4xl lg:text-5xl font-bold text-secondary leading-tight;
+  }
+
+  .section-subheading {
+    @apply font-body text-base md:text-lg text-ink/80 max-w-2xl;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 py-3 rounded-xl
+      font-display font-semibold text-secondary bg-primary shadow-paper
+      transition-all duration-150 ease-out
+      hover:-translate-y-0.5 hover:shadow-paper-lg
+      active:translate-y-0 active:shadow-none
+      focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-secondary;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 py-3 rounded-xl
+      font-display font-semibold text-white bg-secondary shadow-paper
+      transition-all duration-150 ease-out
+      hover:-translate-y-0.5 hover:shadow-paper-lg
+      active:translate-y-0 active:shadow-none
+      focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-accent;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 min-h-[44px] px-6 py-3 rounded-xl
+      font-display font-semibold text-secondary bg-transparent border-2 border-secondary
+      transition-all duration-150 ease-out
+      hover:bg-secondary hover:text-white
+      focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-secondary;
+  }
+
+  .form-input {
+    @apply w-full min-h-[44px] rounded-xl border-2 border-secondary/20 bg-white px-4 py-2.5
+      font-body text-ink placeholder:text-ink/40
+      focus:border-secondary focus:outline-none focus-visible:outline focus-visible:outline-[3px] focus-visible:outline-secondary/60;
+  }
+
+  .form-label {
+    @apply block font-display font-semibold text-secondary mb-1.5;
+  }
+
+  .form-error {
+    @apply text-sm font-semibold text-red-700 mt-1.5;
+  }
+}
