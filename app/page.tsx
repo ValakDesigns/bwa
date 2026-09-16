@@ -1,11 +1,29 @@
+import type { Metadata } from "next";
+import Hero from "@/components/sections/Hero";
+import OurStory from "@/components/sections/OurStory";
+import HowItWorks from "@/components/sections/HowItWorks";
+import Impact from "@/components/sections/Impact";
+import GetInvolvedCTA from "@/components/sections/GetInvolvedCTA";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Free, one-on-one math and English tutoring for K-12 students facing serious illness, founded by St. Jude alumni.",
+  openGraph: {
+    title: "Brain Warrior Academy",
+    description:
+      "Free, one-on-one math and English tutoring for K-12 students facing serious illness.",
+  },
+};
+
 export default function Home() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-16">
-      <h1 className="section-heading">Brain Warrior Academy</h1>
-      <p className="section-subheading mt-4">
-        Free, one-on-one math and English tutoring for K-12 students facing
-        serious illness.
-      </p>
-    </div>
+    <>
+      <Hero />
+      <OurStory />
+      <HowItWorks />
+      <Impact />
+      <GetInvolvedCTA />
+    </>
   );
 }
