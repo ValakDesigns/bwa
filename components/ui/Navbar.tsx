@@ -53,7 +53,7 @@ export default function Navbar() {
                 href={link.href}
                 aria-current={pathname === link.href ? "page" : undefined}
                 className={cn(
-                  "font-display font-semibold text-secondary/80 transition-colors hover:text-secondary",
+                  "flex min-h-[44px] items-center font-display font-semibold text-secondary/80 transition-colors hover:text-secondary",
                   pathname === link.href && "text-secondary underline underline-offset-4"
                 )}
               >

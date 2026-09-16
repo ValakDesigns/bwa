@@ -12,7 +12,7 @@ export default function Logo({ className = "" }: { className?: string }) {
       aria-label="Brain Warrior Academy — home"
     >
       <span
-        className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-secondary shadow-paper"
+        className="flex h-9 w-9 items-center justify-center rounded-full bg-primary text-ink shadow-paper"
         aria-hidden="true"
       >
         BW
